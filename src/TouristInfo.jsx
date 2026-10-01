@@ -25,7 +25,7 @@ function TouristInfo() {
       item.title.toLowerCase().includes(searchKeyword.toLowerCase())
     );
     setFilteredData(filtered);
-    setCurrentPage(1); // 搜尋後回到第1頁
+    setCurrentPage(1); 
   }, [searchKeyword]);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
